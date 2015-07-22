@@ -4,7 +4,7 @@
 import socket
 import time
 from bitstring import ConstBitStream
-from Adafruit_PWM_Servo_Driver import PWM
+from lib.Adafruit_PWM_Servo_Driver import PWM
 
 
 udp_bind_ip = "127.0.0.1"
@@ -31,4 +31,4 @@ while True:
         servo_value = int((value + 255) / 512.0 * travel + servoMin)
         print "Servo:", servo, "Value:", servo_value
         pwm.setPWM(servo, 0, servo_value)
-        
+
