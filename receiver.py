@@ -25,7 +25,7 @@ while True:
     bits = ConstBitStream(bytes=data, length=length)
     servo = 0
     while bits.pos <= length - 16:
-        servo_value = bits.read('int:16')
+        servo_value = bits.read('uint:16')
         print "Servo:", servo, "Value:", servo_value
         pwm.setPWM(servo, 0, servo_value)
         servo = servo + 1

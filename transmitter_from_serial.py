@@ -3,7 +3,7 @@ import math
 from bitstring import BitArray
 import socket
 
-UDP_ADDR = "127.0.0.1"
+UDP_ADDR = "10.0.0.9"
 UDP_PORT = 5040
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 ser = serial.Serial('/dev/tty.usbmodemfa131', 9600)
