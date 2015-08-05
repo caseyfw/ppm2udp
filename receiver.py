@@ -1,5 +1,6 @@
 # Requires bitstring module
-# $ pip install bitstring
+# $ sudo apt-get install python-pip
+# $ sudo pip install bitstring
 
 import socket
 import time
