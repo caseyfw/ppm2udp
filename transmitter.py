@@ -11,7 +11,7 @@ UDP_PORT = 5040
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 while True:
-    for servo_value in range(0,1000):
+    for servo_value in range(150,600):
         bits = Bits('uint:16=' + str(servo_value))
         print bits.bin
         s.sendto(bits.tobytes(), (UDP_ADDR, UDP_PORT))
